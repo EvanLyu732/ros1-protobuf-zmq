@@ -1,0 +1,12 @@
+syntax = "proto3";
+package std_msgs;
+
+/*
+ * Ref to std_msgs/PointField [https://docs.ros.org/en/lunar/api/sensor_msgs/html/msg/PointField.html]
+ */
+message PointField {
+  string name = 2;
+  uint32 offset = 3;
+  uint32 datatype = 4;
+  uint32 count = 5;
+}

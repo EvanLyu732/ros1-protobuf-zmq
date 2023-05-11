@@ -1,0 +1,20 @@
+syntax = "proto3";
+package sensor_msgs;
+
+import "std_msgs/Header.proto";
+import "std_msgs/PointField.proto";
+
+/*
+ * Refer to sensors_msg/PointCloud2 [https://docs.ros.org/en/lunar/api/sensor_msgs/html/msg/PointCloud2.html]
+ */
+message PointCloud2{
+  std_msgs.Header header = 1;
+  uint32 height = 2;
+  uint32 width = 3;
+  repeated std_msgs.PointField fields = 4;
+  bool is_bigendian = 5;
+  uint32 point_step = 6;
+  uint32 row_step = 7;
+  repeated uint32 data = 8;
+  bool is_dense = 9;
+}

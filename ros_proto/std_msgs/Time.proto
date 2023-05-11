@@ -1,0 +1,10 @@
+syntax = "proto3";
+package std_msgs;
+
+/*
+ * Refer to sensors_msg/Time [https://docs.ros.org/en/noetic/api/std_msgs/html/msg/Time.html]
+ */
+message Time{
+  double sec = 1; // timestamp seconds
+  double nsec = 2; // timestamp nanoseconds
+}

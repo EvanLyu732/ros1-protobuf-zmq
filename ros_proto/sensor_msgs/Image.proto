@@ -1,0 +1,16 @@
+syntax = "proto3";
+package sensor_msgs;
+
+import "std_msgs/Header.proto";
+/*
+ * Refer to sensors_msg/Image [https://docs.ros.org/en/indigo/api/sensor_msgs/html/msg/Image.html]
+ */
+message Image{
+  std_msgs.Header header = 1;
+  int32 height = 2;
+  int32 width = 3;
+  string encoding = 4;
+  int32 is_bigendian = 5;
+  int32 step = 6;
+  repeated int32 data = 7;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package std_msgs;
+
+import "std_msgs/Time.proto";
+/*
+ * Refer to sensors_msg/Header [https://docs.ros.org/en/noetic/api/std_msgs/html/msg/Header.html]
+ */
+message Header{
+  int32 seq = 1;
+  std_msgs.Time stamp = 2;
+  string frame_id = 3;
+}
